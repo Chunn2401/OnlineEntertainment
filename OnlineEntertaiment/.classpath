@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" output="target/classes" path="src/main/java">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-17">
+		<attributes>
+			<attribute name="module" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
+	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Apache Tomcat v9.0">
+		<attributes>
+			<attribute name="owner.project.facets" value="jst.web"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
+	<classpathentry kind="lib" path="D:/Eclipse/eclipse/OnlineEntertaiment/ThuVien/commons-codec-1.15.jar"/>
+	<classpathentry kind="lib" path="D:/Eclipse/eclipse/OnlineEntertaiment/ThuVien/commons-collections4-4.4.jar"/>
+	<classpathentry kind="lib" path="D:/Eclipse/eclipse/OnlineEntertaiment/ThuVien/commons-io-2.11.0.jar"/>
+	<classpathentry kind="lib" path="D:/Eclipse/eclipse/OnlineEntertaiment/ThuVien/commons-math3-3.6.1.jar"/>
+	<classpathentry kind="lib" path="D:/Eclipse/eclipse/OnlineEntertaiment/ThuVien/log4j-api-2.14.1.jar"/>
+	<classpathentry kind="lib" path="D:/Eclipse/eclipse/OnlineEntertaiment/ThuVien/poi-5.1.0.jar"/>
+	<classpathentry kind="lib" path="D:/Eclipse/eclipse/OnlineEntertaiment/ThuVien/poi-examples-5.1.0.jar"/>
+	<classpathentry kind="lib" path="D:/Eclipse/eclipse/OnlineEntertaiment/ThuVien/poi-excelant-5.1.0.jar"/>
+	<classpathentry kind="lib" path="D:/Eclipse/eclipse/OnlineEntertaiment/ThuVien/poi-javadoc-5.1.0.jar"/>
+	<classpathentry kind="lib" path="D:/Eclipse/eclipse/OnlineEntertaiment/ThuVien/poi-ooxml-5.1.0.jar"/>
+	<classpathentry kind="lib" path="D:/Eclipse/eclipse/OnlineEntertaiment/ThuVien/poi-ooxml-full-5.1.0.jar"/>
+	<classpathentry kind="lib" path="D:/Eclipse/eclipse/OnlineEntertaiment/ThuVien/poi-ooxml-lite-5.1.0.jar"/>
+	<classpathentry kind="lib" path="D:/Eclipse/eclipse/OnlineEntertaiment/ThuVien/poi-scratchpad-5.1.0.jar"/>
+	<classpathentry kind="lib" path="D:/Eclipse/eclipse/OnlineEntertaiment/ThuVien/selenium-server-4.1.2.jar"/>
+	<classpathentry kind="lib" path="D:/Eclipse/eclipse/OnlineEntertaiment/ThuVien/SparseBitSet-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Nguyen Trung/.m2/repository/org/hibernate/hibernate-core/5.6.7.Final/hibernate-core-5.6.7.Final.jar" sourcepath="C:/Users/Nguyen Trung/.m2/repository/org/hibernate/hibernate-core/5.6.7.Final/hibernate-core-5.6.7.Final-sources.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="org.eclipse.jst.component.archivename" value="hibernate-core-5.6.7.Final.jar"/>
+			<attribute name="maven.groupId" value="org.hibernate"/>
+			<attribute name="maven.artifactId" value="hibernate-core"/>
+			<attribute name="maven.version" value="5.6.7.Final"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/Eclipse/Tailieu/Library/poi-bin-5.1.0-20211024/poi-bin-5.1.0/ooxml-lib/xmlbeans-5.0.2.jar"/>
+	<classpathentry kind="lib" path="D:/Eclipse/Tailieu/Library/poi-bin-5.1.0-20211024/poi-bin-5.1.0/ooxml-lib/commons-compress-1.21.jar"/>
+	<classpathentry kind="lib" path="D:/Eclipse/Tailieu/Library/poi-bin-5.1.0-20211024/poi-bin-5.1.0/ooxml-lib/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="D:/Eclipse/Tailieu/Library/poi-bin-5.1.0-20211024/poi-bin-5.1.0/ooxml-lib/curvesapi-1.06.jar"/>
+	<classpathentry kind="lib" path="D:/Eclipse/Tailieu/Library/poi-bin-5.1.0-20211024/poi-bin-5.1.0/ooxml-lib/slf4j-api-1.7.32.jar"/>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>

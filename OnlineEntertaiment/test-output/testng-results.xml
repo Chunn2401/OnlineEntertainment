@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="9" passed="5" failed="4" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-05-07T20:42:44 ICT" name="Suite" finished-at="2022-05-07T20:43:36 ICT" duration-ms="51766">
+    <groups>
+    </groups>
+    <test started-at="2022-05-07T20:42:44 ICT" name="Test" finished-at="2022-05-07T20:43:36 ICT" duration-ms="51766">
+      <class name="TestASM2.Test.TestUpdateUser">
+        <test-method is-config="true" signature="init()[pri:0, instance:TestASM2.Test.TestUpdateUser@131774fe]" started-at="2022-05-07T20:43:11 ICT" name="init" finished-at="2022-05-07T20:43:11 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestASM2.Test.TestUpdateUser@131774fe]" started-at="2022-05-07T20:43:11 ICT" name="setUp" finished-at="2022-05-07T20:43:13 ICT" duration-ms="1527" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="multiUpdate(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:TestASM2.Test.TestUpdateUser@131774fe]" started-at="2022-05-07T20:43:13 ICT" name="multiUpdate" data-provider="InsertData" finished-at="2022-05-07T20:43:17 ICT" duration-ms="4369" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user10]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Vương Nguyên Trung]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[trung123@gmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[User Updated!!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- multiUpdate -->
+        <test-method is-config="true" signature="teadDown(org.testng.ITestResult)[pri:0, instance:TestASM2.Test.TestUpdateUser@131774fe]" started-at="2022-05-07T20:43:17 ICT" name="teadDown" finished-at="2022-05-07T20:43:18 ICT" duration-ms="236" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=multiUpdate status=SUCCESS method=TestUpdateUser.multiUpdate(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:TestASM2.Test.TestUpdateUser@131774fe] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teadDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestASM2.Test.TestUpdateUser@131774fe]" started-at="2022-05-07T20:43:18 ICT" name="setUp" finished-at="2022-05-07T20:43:19 ICT" duration-ms="1856" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="multiUpdate(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:TestASM2.Test.TestUpdateUser@131774fe]" started-at="2022-05-07T20:43:19 ICT" name="multiUpdate" data-provider="InsertData" finished-at="2022-05-07T20:43:24 ICT" duration-ms="4265" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user10]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Vương Nguyên Trung]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[trung123@gmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[User Updated]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [User Updated!!] but found [User Updated]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [User Updated!!] but found [User Updated]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at TestASM2.Test.TestUpdateUser.multiUpdate(TestUpdateUser.java:81)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- multiUpdate -->
+        <test-method is-config="true" signature="teadDown(org.testng.ITestResult)[pri:0, instance:TestASM2.Test.TestUpdateUser@131774fe]" started-at="2022-05-07T20:43:24 ICT" name="teadDown" finished-at="2022-05-07T20:43:24 ICT" duration-ms="319" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=multiUpdate status=FAILURE method=TestUpdateUser.multiUpdate(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:TestASM2.Test.TestUpdateUser@131774fe] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teadDown -->
+        <test-method is-config="true" signature="destroy()[pri:0, instance:TestASM2.Test.TestUpdateUser@131774fe]" started-at="2022-05-07T20:43:24 ICT" name="destroy" finished-at="2022-05-07T20:43:24 ICT" duration-ms="175" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- destroy -->
+      </class> <!-- TestASM2.Test.TestUpdateUser -->
+      <class name="TestASM2.Test.TestDeleteUser">
+        <test-method is-config="true" signature="init()[pri:0, instance:TestASM2.Test.TestDeleteUser@158d2680]" started-at="2022-05-07T20:43:24 ICT" name="init" finished-at="2022-05-07T20:43:24 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestASM2.Test.TestDeleteUser@158d2680]" started-at="2022-05-07T20:43:24 ICT" name="setUp" finished-at="2022-05-07T20:43:26 ICT" duration-ms="1449" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="multiDelete(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:TestASM2.Test.TestDeleteUser@158d2680]" started-at="2022-05-07T20:43:26 ICT" name="multiDelete" data-provider="InsertData" finished-at="2022-05-07T20:43:30 ICT" duration-ms="3791" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user10]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Vương Nguyên Trung]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[trung123@gmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[User Deleted!!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- multiDelete -->
+        <test-method is-config="true" signature="teadDown(org.testng.ITestResult)[pri:0, instance:TestASM2.Test.TestDeleteUser@158d2680]" started-at="2022-05-07T20:43:30 ICT" name="teadDown" finished-at="2022-05-07T20:43:30 ICT" duration-ms="212" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=multiDelete status=SUCCESS method=TestDeleteUser.multiDelete(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:TestASM2.Test.TestDeleteUser@158d2680] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teadDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestASM2.Test.TestDeleteUser@158d2680]" started-at="2022-05-07T20:43:30 ICT" name="setUp" finished-at="2022-05-07T20:43:31 ICT" duration-ms="1525" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="multiDelete(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:TestASM2.Test.TestDeleteUser@158d2680]" started-at="2022-05-07T20:43:31 ICT" name="multiDelete" data-provider="InsertData" finished-at="2022-05-07T20:43:35 ICT" duration-ms="3909" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user10]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Vương Nguyên Trung]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[trung123@gmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[User Deleted]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Error: Error while committing the transaction] but found [User Deleted]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Error: Error while committing the transaction] but found [User Deleted]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at TestASM2.Test.TestDeleteUser.multiDelete(TestDeleteUser.java:76)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- multiDelete -->
+        <test-method is-config="true" signature="teadDown(org.testng.ITestResult)[pri:0, instance:TestASM2.Test.TestDeleteUser@158d2680]" started-at="2022-05-07T20:43:35 ICT" name="teadDown" finished-at="2022-05-07T20:43:36 ICT" duration-ms="350" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=multiDelete status=FAILURE method=TestDeleteUser.multiDelete(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:TestASM2.Test.TestDeleteUser@158d2680] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teadDown -->
+        <test-method is-config="true" signature="destroy()[pri:0, instance:TestASM2.Test.TestDeleteUser@158d2680]" started-at="2022-05-07T20:43:36 ICT" name="destroy" finished-at="2022-05-07T20:43:36 ICT" duration-ms="166" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- destroy -->
+      </class> <!-- TestASM2.Test.TestDeleteUser -->
+      <class name="TestASM2.Test.TestLoginExcelData">
+        <test-method is-config="true" signature="init()[pri:0, instance:TestASM2.Test.TestLoginExcelData@16d04d3d]" started-at="2022-05-07T20:42:44 ICT" name="init" finished-at="2022-05-07T20:42:44 ICT" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestASM2.Test.TestLoginExcelData@16d04d3d]" started-at="2022-05-07T20:42:44 ICT" name="setUp" finished-at="2022-05-07T20:42:47 ICT" duration-ms="2123" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="multiLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:TestASM2.Test.TestLoginExcelData@16d04d3d]" started-at="2022-05-07T20:42:47 ICT" name="multiLogin" data-provider="loginData" finished-at="2022-05-07T20:42:49 ICT" duration-ms="2647" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Online Entertainment]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- multiLogin -->
+        <test-method is-config="true" signature="teadDown(org.testng.ITestResult)[pri:0, instance:TestASM2.Test.TestLoginExcelData@16d04d3d]" started-at="2022-05-07T20:42:49 ICT" name="teadDown" finished-at="2022-05-07T20:42:49 ICT" duration-ms="193" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=multiLogin status=SUCCESS method=TestLoginExcelData.multiLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:TestASM2.Test.TestLoginExcelData@16d04d3d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teadDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestASM2.Test.TestLoginExcelData@16d04d3d]" started-at="2022-05-07T20:42:49 ICT" name="setUp" finished-at="2022-05-07T20:42:51 ICT" duration-ms="1498" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="multiLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:TestASM2.Test.TestLoginExcelData@16d04d3d]" started-at="2022-05-07T20:42:51 ICT" name="multiLogin" data-provider="loginData" finished-at="2022-05-07T20:42:51 ICT" duration-ms="476" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[trung123]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Login Online Entertainment]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- multiLogin -->
+        <test-method is-config="true" signature="teadDown(org.testng.ITestResult)[pri:0, instance:TestASM2.Test.TestLoginExcelData@16d04d3d]" started-at="2022-05-07T20:42:51 ICT" name="teadDown" finished-at="2022-05-07T20:42:52 ICT" duration-ms="218" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=multiLogin status=SUCCESS method=TestLoginExcelData.multiLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:TestASM2.Test.TestLoginExcelData@16d04d3d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teadDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestASM2.Test.TestLoginExcelData@16d04d3d]" started-at="2022-05-07T20:42:52 ICT" name="setUp" finished-at="2022-05-07T20:42:53 ICT" duration-ms="1454" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="multiLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:TestASM2.Test.TestLoginExcelData@16d04d3d]" started-at="2022-05-07T20:42:53 ICT" name="multiLogin" data-provider="loginData" finished-at="2022-05-07T20:42:56 ICT" duration-ms="2754" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Login Online Entertainment]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Online Entertainment] but found [Login Online Entertainment]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Online Entertainment] but found [Login Online Entertainment]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at TestASM2.Test.TestLoginExcelData.multiLogin(TestLoginExcelData.java:68)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- multiLogin -->
+        <test-method is-config="true" signature="teadDown(org.testng.ITestResult)[pri:0, instance:TestASM2.Test.TestLoginExcelData@16d04d3d]" started-at="2022-05-07T20:42:56 ICT" name="teadDown" finished-at="2022-05-07T20:42:57 ICT" duration-ms="662" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=multiLogin status=FAILURE method=TestLoginExcelData.multiLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:TestASM2.Test.TestLoginExcelData@16d04d3d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teadDown -->
+        <test-method is-config="true" signature="destroy()[pri:0, instance:TestASM2.Test.TestLoginExcelData@16d04d3d]" started-at="2022-05-07T20:42:57 ICT" name="destroy" finished-at="2022-05-07T20:42:57 ICT" duration-ms="515" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- destroy -->
+      </class> <!-- TestASM2.Test.TestLoginExcelData -->
+      <class name="TestASM2.Test.TestInsertUser">
+        <test-method is-config="true" signature="init()[pri:0, instance:TestASM2.Test.TestInsertUser@10e31a9a]" started-at="2022-05-07T20:42:57 ICT" name="init" finished-at="2022-05-07T20:42:57 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestASM2.Test.TestInsertUser@10e31a9a]" started-at="2022-05-07T20:42:57 ICT" name="setUp" finished-at="2022-05-07T20:42:59 ICT" duration-ms="1517" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="multiInsert(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:TestASM2.Test.TestInsertUser@10e31a9a]" started-at="2022-05-07T20:42:59 ICT" name="multiInsert" data-provider="InsertData" finished-at="2022-05-07T20:43:04 ICT" duration-ms="4885" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user10]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Trung1]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[trung@gmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[User inserted!!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- multiInsert -->
+        <test-method is-config="true" signature="teadDown(org.testng.ITestResult)[pri:0, instance:TestASM2.Test.TestInsertUser@10e31a9a]" started-at="2022-05-07T20:43:04 ICT" name="teadDown" finished-at="2022-05-07T20:43:04 ICT" duration-ms="184" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=multiInsert status=SUCCESS method=TestInsertUser.multiInsert(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:TestASM2.Test.TestInsertUser@10e31a9a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teadDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestASM2.Test.TestInsertUser@10e31a9a]" started-at="2022-05-07T20:43:04 ICT" name="setUp" finished-at="2022-05-07T20:43:05 ICT" duration-ms="1680" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="multiInsert(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:TestASM2.Test.TestInsertUser@10e31a9a]" started-at="2022-05-07T20:43:05 ICT" name="multiInsert" data-provider="InsertData" finished-at="2022-05-07T20:43:11 ICT" duration-ms="5353" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user10]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[trung2]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[trung1@gmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[User inserted!!]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Error: Error while committing the transaction] but found [User inserted!!]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Error: Error while committing the transaction] but found [User inserted!!]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at TestASM2.Test.TestInsertUser.multiInsert(TestInsertUser.java:84)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- multiInsert -->
+        <test-method is-config="true" signature="teadDown(org.testng.ITestResult)[pri:0, instance:TestASM2.Test.TestInsertUser@10e31a9a]" started-at="2022-05-07T20:43:11 ICT" name="teadDown" finished-at="2022-05-07T20:43:11 ICT" duration-ms="406" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=multiInsert status=FAILURE method=TestInsertUser.multiInsert(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:TestASM2.Test.TestInsertUser@10e31a9a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teadDown -->
+        <test-method is-config="true" signature="destroy()[pri:0, instance:TestASM2.Test.TestInsertUser@10e31a9a]" started-at="2022-05-07T20:43:11 ICT" name="destroy" finished-at="2022-05-07T20:43:11 ICT" duration-ms="225" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- destroy -->
+      </class> <!-- TestASM2.Test.TestInsertUser -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

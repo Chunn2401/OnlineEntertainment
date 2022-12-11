@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="TestASM2.Test.TestLoginExcelData">
+        <methods>
+          <include name="destroy"/>
+          <include name="multiLogin" invocation-numbers="2"/>
+          <include name="setUp"/>
+          <include name="init"/>
+          <include name="teadDown"/>
+        </methods>
+      </class> <!-- TestASM2.Test.TestLoginExcelData -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
