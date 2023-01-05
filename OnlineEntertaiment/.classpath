@@ -15,14 +15,12 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-17">
 		<attributes>
-			<attribute name="module" value="true"/>
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
-			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
@@ -47,20 +45,38 @@
 	<classpathentry kind="lib" path="D:/Eclipse/eclipse/OnlineEntertaiment/ThuVien/poi-scratchpad-5.1.0.jar"/>
 	<classpathentry kind="lib" path="D:/Eclipse/eclipse/OnlineEntertaiment/ThuVien/selenium-server-4.1.2.jar"/>
 	<classpathentry kind="lib" path="D:/Eclipse/eclipse/OnlineEntertaiment/ThuVien/SparseBitSet-1.2.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Nguyen Trung/.m2/repository/org/hibernate/hibernate-core/5.6.7.Final/hibernate-core-5.6.7.Final.jar" sourcepath="C:/Users/Nguyen Trung/.m2/repository/org/hibernate/hibernate-core/5.6.7.Final/hibernate-core-5.6.7.Final-sources.jar">
-		<attributes>
-			<attribute name="maven.pomderived" value="true"/>
-			<attribute name="org.eclipse.jst.component.archivename" value="hibernate-core-5.6.7.Final.jar"/>
-			<attribute name="maven.groupId" value="org.hibernate"/>
-			<attribute name="maven.artifactId" value="hibernate-core"/>
-			<attribute name="maven.version" value="5.6.7.Final"/>
-			<attribute name="maven.scope" value="compile"/>
-		</attributes>
-	</classpathentry>
 	<classpathentry kind="lib" path="D:/Eclipse/Tailieu/Library/poi-bin-5.1.0-20211024/poi-bin-5.1.0/ooxml-lib/xmlbeans-5.0.2.jar"/>
 	<classpathentry kind="lib" path="D:/Eclipse/Tailieu/Library/poi-bin-5.1.0-20211024/poi-bin-5.1.0/ooxml-lib/commons-compress-1.21.jar"/>
 	<classpathentry kind="lib" path="D:/Eclipse/Tailieu/Library/poi-bin-5.1.0-20211024/poi-bin-5.1.0/ooxml-lib/commons-logging-1.2.jar"/>
 	<classpathentry kind="lib" path="D:/Eclipse/Tailieu/Library/poi-bin-5.1.0-20211024/poi-bin-5.1.0/ooxml-lib/curvesapi-1.06.jar"/>
 	<classpathentry kind="lib" path="D:/Eclipse/Tailieu/Library/poi-bin-5.1.0-20211024/poi-bin-5.1.0/ooxml-lib/slf4j-api-1.7.32.jar"/>
+	<classpathentry kind="src" path="target/generated-sources/annotations">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="ignore_optional_problems" value="true"/>
+			<attribute name="m2e-apt" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" output="target/test-classes" path="target/generated-test-sources/test-annotations">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="ignore_optional_problems" value="true"/>
+			<attribute name="m2e-apt" value="true"/>
+			<attribute name="test" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path=".apt_generated">
+		<attributes>
+			<attribute name="optional" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" output="target/test-classes" path=".apt_generated_tests">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="test" value="true"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

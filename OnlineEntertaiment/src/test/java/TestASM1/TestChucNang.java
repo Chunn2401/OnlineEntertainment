@@ -1,18 +1,8 @@
 package TestASM1;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotEquals;
-
-import java.util.List;
-
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
-
 import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
-import org.junit.Assert;
 import com.poly.dao.UserDao;
 import com.poly.model.User;
 
@@ -35,7 +25,7 @@ public class TestChucNang {
 	public void TestUpdate() {
 		user.setId("trung123123");
 		user.setPassword("12345678");
-		user.setFullname("Nguyên Trung");
+		user.setFullname("Nguyï¿½n Trung");
 		assertEquals(1, dao.update(user));
 	}
 	@Test
